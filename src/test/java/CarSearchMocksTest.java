@@ -39,7 +39,7 @@ public class CarSearchMocksTest {
     @Test
     public void verifyMockWithAtLeastOnce() throws CarException {
         findCarMock.findCar("test", 100, 2020);
-        verify(findCarMock, atLeastOnce()).findCar(contains("te"), 100, 2020);
+        verify(findCarMock, atLeastOnce()).findCar("test", 100, 2020);
     }
 
     @Test
